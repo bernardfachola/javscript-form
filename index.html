@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap');
+        </style>
+        
+    <title>FORMATION Web Dev</title>
+</head>
+<body>
+
+<section>
+    <form id="registration-form">
+ <div id="head">
+    <h1>Formez-vous au numérique avec l'OIF</h1>
+    <p class="para">Inscrivez-vous pour bénéficier de la formation en <em><strong style="color: black;">Développement web</strong> </em>gratuitement instaurée par <strong style="color: black;">D-CLIC</strong> en collaboration avec <em><strong>Afrik-Eductec</strong></em></p>
+ </div>
+
+ <div class="general">
+     <div class="name">
+       <p><strong>Nom*</strong></p>
+        <input type="text" id="nom" placeholder="Saisissez votre nom" required>
+       
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="Error"></div>
+     </div>
+
+      <div class="prenom">
+        <p><strong>Prenom*</strong></p>
+        <input type="text" id="prenom" placeholder="Saisissez votre prenom" required>
+      
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="Error"></div>
+      </div>
+
+     <div class="naissance">
+        <p><strong>Date de naissance*</strong></p>
+        <input type="date" id="naissance" required>
+     </div>
+
+     <div class="numero">
+        <p><strong>Numero de télephone*</strong></p>
+        <input type="tel" id="telephone" placeholder="01XXXXXXXX" required>
+     </div>
+
+     <div class="motivation">
+        <p><strong>Motivation*</strong></p>
+        <textarea name="²" id="moti" cols="22" rows="7" placeholder="Veiller nous faire part de votre motivation...." required></textarea>
+     </div>
+ 
+      <div class="en">
+        <button type="submit" class="envoi">Soumettre</button>
+      </div>
+   </div>
+    </form>
+      
+
+    <div id="result">
+        <h2>Informations soumises:</h2>
+
+        <p><strong>Nom:</strong><span id="result-nom"></span></p>
+
+        <p><strong>Prenom:</strong><span id="result-prenom"></span></p>
+
+        <p><strong>Date:</strong><span id="result-naissance"></span></p>
+
+        <p><strong>Numero de télephone:</strong><span id="result-numero"></span></p>
+
+        <p><strong>Motivation:</strong><span id="result-motivation"></span></p>
+    </div>
+  </section> 
+
+  <script src="main.js"></script>  
+</body>
+</html>
