@@ -65,7 +65,7 @@ document.querySelector(`#registration-form`).addEventListener(`submit`, function
 
      document.getElementById(`result-naissance`).textContent = naissance;
 
-    //  document.getElementById(`result-telephone`).textContent = telephone;
+    //  document.getElementById(`result-numero`).textContent = telephone;
 
      document.getElementById(`result-motivation`).textContent = motivation;
 
